@@ -25,7 +25,5 @@ from .routers import router
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
-    # commenting this because docs is added for better endpoint view
-    # path('', views.api_root),
     path('api/Users/', include('Users.urls')),
 ]

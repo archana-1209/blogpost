@@ -7,7 +7,6 @@ class Post(models.Model):
     user = models.ForeignKey(User,on_delete=models.SET_NULL, null=True, blank=True)
     title = models.CharField(max_length=500, default="untitled")
     content = models.TextField(max_length=10000)
-    # discussion tags from user model
     tags = models.ManyToManyField(TopicTag, related_name='article_tags', blank=True) 
     published = models.DateTimeField(auto_now_add=True)
     views = models.IntegerField(default=0)

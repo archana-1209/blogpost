@@ -16,8 +16,8 @@ class SubcomentSerializer(serializers.ModelSerializer):
     class Meta:
         model=SubComment
         fields='__all__'
-class absseriaizer(serializers.ModelSerializer):
-    sucomment = SubcomentSerializer(many=True)
-    class Meta:
-        model=SubComment
-        fields=['sucomment']
+# class absseriaizer(serializers.ModelSerializer):
+#     sucomment = SubcomentSerializer(many=True)
+#     class Meta:
+#         model=SubComment
+#         fields=['sucomment']
